@@ -1,3 +1,27 @@
-*We will be creating a table today with the help of SQL. I will use SQLite, while you can use any platform you like.*
+*We will be creating a table today with the help of SQL. I will use SSMS and SQL Server 2022, while you can use any platform you like.*
 
 *how to create a table*
+create table EmployeeList
+(EmployeeID int,
+FName varchar(50),
+LName varchar(50),
+Age int,
+Gender varchar(50))
+
+create table employeeinfo
+(employeeid int,
+JobTitle varchar(50),
+JobSalary int)
+
+*insert into values og both tables*
+insert into EmployeeList values
+(101,'Jim', 'Carrey', 22, 'male'),
+(102,'Megan', 'Fox', 24, 'female'),
+(103,'Hugh', 'Jackman', 28, 'male'),
+(104,'Scarlett', 'Johansson', 29, 'female')
+
+insert into EmployeeInfo values
+(101,'Salesperson', 42000),
+(102,'Manager', 24000),
+(103,'Junior Analyst',  28000),
+(104,'Senior Data Analyst', 39000)

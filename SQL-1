@@ -8,7 +8,7 @@ LName varchar(50),
 Age int,
 Gender varchar(50))
 
-create table employeeinfo
+create table EmployeeInfo
 (employeeid int,
 JobTitle varchar(50),
 JobSalary int)
@@ -25,3 +25,11 @@ insert into EmployeeInfo values
 (102,'Manager', 24000),
 (103,'Junior Analyst',  28000),
 (104,'Senior Data Analyst', 39000)
+
+*select commands for *, top, distinct, count, as, max, min, avg*'
+
+select * from EmployeeInfo;
+select top 3 * from EmployeeInfo;
+select distinct(JobTitle) from EmployeeInfo;
+select count(JobTitle) AS DiffJobTitles from EmployeeInfo;
+select MAX(JobSalary) from EmployeeInfo;
